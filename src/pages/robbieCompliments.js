@@ -6,6 +6,14 @@ function RobbieCompliments() {
     "You're really nice",
     "You have lovely brown eyes",
     "You're very skilled and talented",
+    "You're looking very radiant today",
+    "You have a very sexy bum",
+    "You're kind and empathetic",
+    "I think you're briliant",
+    "You have a cute little nose",
+    "I love your smile",
+    "You're super cute and excellent at snuggling",
+    "You're extremely pretty",
   ];
 
   const images = [
@@ -51,7 +59,7 @@ function RobbieCompliments() {
       </div>
       <div className="flexContainer">
         <div>
-          <img src={image} alt="" />
+          <img src={image} alt="" className="robbie" />
         </div>
         <p className="compliment">{compliment}</p>
       </div>

@@ -3,9 +3,11 @@ import { useState } from "react";
 function Kitten() {
   const [image, setImage] = useState("");
 
+  const [buttonText, setButtonText] = useState("Click Me!");
+
   function RandomKittenLink() {
-    const width = Math.floor(Math.random() * 900) + 100;
-    const height = Math.floor(Math.random() * 900) + 100;
+    const width = Math.floor(Math.random() * 400) + 100;
+    const height = Math.floor(Math.random() * 400) + 100;
 
     const url =
       "https://placekitten.com/g/" + width.toString() + "/" + height.toString();
@@ -19,6 +21,7 @@ function Kitten() {
 
   function HandleClick() {
     setImage(RandomKittenLink());
+    setButtonText("Click Me Again!");
   }
 
   return (
@@ -27,9 +30,9 @@ function Kitten() {
         On your birthday you should see a picture of a kitten whenever you want
         to.
       </h1>
-      <h2>Click the button below to see a picture of a kitten.</h2>
+      <h2>Keep clicking the button below to see a picture of a kitten.</h2>
       <div className="flexContainer">
-        <button onClick={HandleClick}>Click Me!</button>
+        <button onClick={HandleClick}>{buttonText}</button>
       </div>
       <div className="flexContainer">
         <div>
