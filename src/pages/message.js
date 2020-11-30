@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function Message() {
   return (
     <div className="Message">
