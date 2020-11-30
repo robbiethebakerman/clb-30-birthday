@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  display: block;
+  text-align: center;
+  font-size: larger;
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+p {
+  font-size: larger;
+}
+
+.Home,
+.RobbieCompliments,
+.Kitten,
+.Message {
+  max-width: 1000px;
+}
